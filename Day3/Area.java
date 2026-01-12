@@ -31,7 +31,7 @@ class Area {
         System.out.print("Enter side of Square: ");
         int side = sc.nextInt();
         sc.close();
-        
+
        obj.area(radius);          // Circle
        obj.area(base, height);    // Triangle
         obj.area(side);           // Square

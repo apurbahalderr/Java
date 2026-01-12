@@ -7,7 +7,7 @@ public class PrintString {
         String first = sc.nextLine();
         System.out.print("Enter second name: ");
         String second = sc.nextLine();
-
+        sc.close();
         System.out.println(second + " " + first);
     }
 }
