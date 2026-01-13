@@ -23,6 +23,7 @@ public class BoxMain{
 		int w = sc.nextInt();
 		System.out.print("Enter height: ");
 		int h = sc.nextInt();
+		sc.close();
 
 		Box box1 = new Box(l, w, h);
 		box1.volume();

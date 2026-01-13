@@ -19,7 +19,7 @@ class EmployeeDet {
   String name;
   String department;
   Address add_emp;
-
+  
   EmployeeDet(int id, double basic, String name, String department, String city, int pin){
     this.e_ID = id;
     this.basic = basic;
@@ -27,11 +27,11 @@ class EmployeeDet {
     this.department = department;
     this.add_emp = new Address(city, pin);
   }
-
+  
 @Override
  public String toString(){
-    return "Employee ID: " + e_ID + " Basic: " + basic + " Name: " + this.name  + " Department: " + this.department + " Address: " + add_emp.city + " " + add_emp.pin;
-  }
+    return "Employee ID: " + e_ID + "Basic: " + basic + "Name: " + name  + "Department: " + department + "Address: " + add_emp.city + " " + add_emp.pin;
+  } 
 }
 
 public class Employee{
@@ -42,20 +42,17 @@ public class Employee{
     sc.nextLine();
     EmployeeDet[] employees = new EmployeeDet[n];
     for(int i = 0; i < n; i++){
-      System.out.println("Enter the details of employee " + (i+1) + " (e_ID basic name department city pin):" );
-      String line = sc.nextLine();
-      while(line.trim().isEmpty()) line = sc.nextLine();
-      Scanner ls = new Scanner(line);
-      int e_ID = ls.nextInt();
-      double basic = ls.nextDouble();
-      String name = ls.next();
-      String department = ls.next();
-      String city = ls.next();
-      int pin = ls.nextInt();
-      ls.close();
+      System.out.println("Enter the details of employee" + (i+1) + ":" );
+      int e_ID = sc.nextInt();
+      double basic = sc.nextDouble();
+      sc.nextLine();
+      String name = sc.nextLine();
+      String department = sc.nextLine();
+      String city = sc.nextLine();
+      int pin = sc.nextInt();
       employees[i] = new EmployeeDet(e_ID, basic, name, department, city, pin);
     }
-    sc.close();
+    
     //Printing the details
     for(EmployeeDet employee: employees){
       System.out.println(employee);
