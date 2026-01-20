@@ -38,11 +38,11 @@ public class CalculateCost{
     l = sc.nextInt();
     b = sc.nextInt();
     int h = sc.nextInt();
-    
+
     _3d box = new _3d(l, b, h);
-    
+    sc.close();
     int total_cost = sheet.area * 40 + box.area * 60;
-    
+
     System.out.println("Total cost is: " + total_cost);
   }
 }
