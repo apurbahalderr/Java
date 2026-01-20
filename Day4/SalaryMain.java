@@ -38,7 +38,7 @@ class Substaff extends Manager {
     }
 }
 
-public class SalaryDemo {
+public class SalaryMain {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
