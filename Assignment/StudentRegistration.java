@@ -95,7 +95,7 @@ public class StudentRegistration extends JFrame implements ActionListener {
             Connection con = DriverManager.getConnection(
                     "jdbc:mysql://localhost:3306/studentdb",
                     "root",
-                    "halderog123"
+                    ""
                 );
 
             PreparedStatement ps = con.prepareStatement(
